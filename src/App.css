@@ -1,0 +1,8 @@
+#mainHeader{
+  height:64px;
+  padding:1.6rem 0;
+  box-sizing:border-box;
+  position: static;
+  background-color: rgb(33, 33, 33);
+  width: 100%;
+}
