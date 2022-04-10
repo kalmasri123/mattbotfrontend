@@ -1,0 +1,21 @@
+.header-section {
+  height: 64px;
+  padding: 1.6rem 0;
+  box-sizing: border-box;
+  position: static;
+  display: flex;
+  background-color: rgb(33, 33, 33);
+  width: 100%;
+}
+.title-section {
+  font-family: "Courier New", Courier, monospace;
+  height:fit-content;
+  padding-left: 15px;
+}
+.title-section p {
+  margin: 0;
+  margin-left:15px;
+}
+.title-section{
+  display: flex;
+}
