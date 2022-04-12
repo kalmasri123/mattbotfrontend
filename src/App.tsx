@@ -1,25 +1,33 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
 import { apiRequest } from "./util/api";
+import { UserContext } from "./util/context";
 function App() {
+  const [user, setUser] = useState(null);
+  console.log(user);
   useEffect(() => {
-    apiRequest("http://localhost:3000/api/auth/discord/me", {
-      method: "GET",
-      credentials: "include",
-    }).then(async (res) => {
-      console.log(await res.json());
-    });
+    if (!user) {
+      apiRequest("http://localhost:3000/api/auth/discord/me", {
+        method: "GET",
+        credentials: "include",
+      }).then(async (res) => {
+        const user = await res.json();
+        setUser(user);
+      });
+    }
   });
   console.log("rendered");
   return (
-    <div className="body-container">
-      <Header></Header>
-      <div className="main-body">
-        <SideBar></SideBar>
+    <UserContext.Provider value={user}>
+      <div className="body-container">
+        <Header></Header>
+        <div className="main-body">
+          <SideBar></SideBar>
+        </div>
       </div>
-    </div>
+    </UserContext.Provider>
   );
 }
 

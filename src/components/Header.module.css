@@ -1,6 +1,7 @@
 .header-section {
   height: 64px;
-  padding: 1.6rem 0;
+  padding: 15px 0;
+  padding-right:15px;
   box-sizing: border-box;
   position: static;
   display: flex;
@@ -11,6 +12,8 @@
   font-family: "Courier New", Courier, monospace;
   height:fit-content;
   padding-left: 15px;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 .title-section p {
   margin: 0;
@@ -18,4 +21,11 @@
 }
 .title-section{
   display: flex;
+}
+.profile-section{
+  margin-left:auto;
+}
+.profile-avatar{
+  border-radius: 50%;
+  height:100%;
 }
