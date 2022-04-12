@@ -2,7 +2,7 @@
     background-color: rgb(18, 18, 18);
     width: 250px;
     transition-property: width;
-    transition-duration: 1s;
+    transition-duration: 500ms;
     overflow-x: hidden;
     box-shadow: 2px 2px rgba(36, 36, 36, 0.809);
 }
