@@ -1,0 +1,23 @@
+.root{
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.root .content{
+    /* height:50%; */
+    /* width:100%; */
+    width:50%;
+    height:60%;
+    background-color: rgb(42, 42, 42);
+    border-radius:5px;
+    padding:20px;
+    box-sizing: border-box;
+    /* justify-content: center; */
+}

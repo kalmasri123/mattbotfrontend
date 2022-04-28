@@ -5,6 +5,17 @@ body {
   line-height: 1.5;
   background-color: rgb(42, 42, 42);
 }
-body,html,#root{
-  height:100%;
+body,
+html,
+#root {
+  height: 100%;
+}
+:root {
+  --main-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --primary-button-color: rgba(68, 138, 255);
+}
+a {
+  color: rgba(255, 255, 255, 0.7);
+
+  text-decoration: none; /* no underline */
 }

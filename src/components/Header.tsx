@@ -13,10 +13,7 @@ const toggleVisibility: MouseEventHandler = (event: React.MouseEvent) => {
   const sideBar = document.querySelector("#main-sidebar");
   sideBar?.classList.toggle(SideBarStyle["SideBar-Hidden"]);
 };
-interface HeaderProps {
-  user?: any;
-}
-export const Header = (props: HeaderProps, ctx: any) => {
+export const Header = () => {
   const user = useContext(UserContext);
   return (
     <section className={style["header-section"]}>

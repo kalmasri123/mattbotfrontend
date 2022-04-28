@@ -4,6 +4,10 @@ import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
 import { apiRequest } from "./util/api";
 import { UserContext } from "./util/context";
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Keywords } from "./components/Keywords";
+import { AddKeyword } from "./components/AddKeyword";
 function App() {
   const [user, setUser] = useState(null);
   console.log(user);
@@ -21,12 +25,21 @@ function App() {
   console.log("rendered");
   return (
     <UserContext.Provider value={user}>
-      <div className="body-container">
-        <Header></Header>
-        <div className="main-body">
-          <SideBar></SideBar>
+      <Router>
+        <div className="body-container">
+          <Header></Header>
+          <div className="main-body">
+            <SideBar></SideBar>
+            <section className="body-content">
+              <Routes>
+                <Route path="keywords" element={<Keywords />}>
+                    <Route path="create" element={<AddKeyword/>}></Route>
+                </Route>
+              </Routes>
+            </section>
+          </div>
         </div>
-      </div>
+      </Router>
     </UserContext.Provider>
   );
 }
