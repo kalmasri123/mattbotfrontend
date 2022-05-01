@@ -58,3 +58,7 @@
     margin-block:auto;
     display: block;
 }
+input{
+    background-color: inherit;
+    border-color:inherit;
+}

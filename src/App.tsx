@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "./Forms.css"
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
 import { apiRequest } from "./util/api";

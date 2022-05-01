@@ -24,6 +24,12 @@ export const AddKeyword = () => {
         <section className="route-header">
           <h5 className="route-header-text">Add Keyword</h5>
         </section>
+        <form className="submission-form">
+          <fieldset className="input-fieldset">
+            <legend>String</legend>
+            <input type="text"></input>
+          </fieldset>
+        </form>
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+.input-fieldset {
+  border-radius: 5px;
+  padding: 0px 14px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.input-fieldset input {
+  border: 0;
+}
+.input-fieldset legend {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--main-font-family);
+}
+.submission-form input {
+  padding: 4.5px 14px 16.5px 0;
+  height:100%;
+  border:none;  
+  color:white;
+  font-family: var(--main-font-family);
+  height: 1.4em;
+  font-size:16px;
+
+}
+.submission-form input:focus {
+    outline: none;
+}
